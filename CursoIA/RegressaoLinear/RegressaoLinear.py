@@ -29,8 +29,8 @@ class RegressaoLinear:
         return self.__resultadoInterceptacao + (self.__resultadoInclinacao * valor)
 
 
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 6, 8, 10]
-modelo = RegressaoLinear(x, y)
-previsao = modelo.previsao(6)
+temperaturaCelsius = [20, 22, 25, 27, 30, 32, 35]
+vendasDeSorvete = [100, 115, 150, 160, 180, 195, 220]
+modelo = RegressaoLinear(temperaturaCelsius, vendasDeSorvete)
+previsao = modelo.previsao(10)
 print(previsao)
